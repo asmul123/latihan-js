@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pemilu</title>
+</head>
+<center>
+    <h1>-Pemilu 2024-</h1>
+    <h2>Anies | Prabowo | Ganjar</h2>
+    </center>
+    <form>
+        <label for="umur">Umur</label>
+        <input type="number" id="umur"><br>                                                                                   
+
+        <label for="status">Status</label>
+        <select id="status">
+        <option value="sudah">lulus sekolah</option>
+        <option value="belum">belum lulus sekolah</option>
+
+        </select><br>
+<label for="Pilihan">Pilihan</label>
+        <select id="status">
+        <option value="coblos">Anies</option>
+        <option value="coblos">Prabowo</option>
+        <option value="coblos">Ganjar</option>
+        </select><br>
+        
+      <input type="date" id="tgl">
+        <button type="button" onclick="hasil()">Click</button><br>
+    </form>
+
+
+    <script>
+        function hasil() {
+            var umur = parseFloat(document.getElementById("umur").value);
+            var status = document.getElementById("status").value;
+
+        if (umur > 17 || status == "sudah") {
+            alert("anda memiliki hak pilih (Sah)");
+            } else {
+                alert("anda belum memiliki hak pilih (Tidak Sah)");
+            }
+        
+        }
+    </script>
+</body>
+</html>
